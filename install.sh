@@ -69,13 +69,6 @@ echo '==================4.3.构建镜像: 配置中心, 消息中心========'
 #回到根目录
 cd -
 
-#构建镜像:消息中心
-cd ./center/bus
-mvn package && mvn docker:build
-
-#回到根目录
-cd -
-
 echo '==================4.4.启动注册中心, 配置中心, 消息中心============'
 #去docker-compose目录
 cd docker-compose
