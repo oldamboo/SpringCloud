@@ -53,13 +53,13 @@ linux和mac下可在项目根目录下执行 `./install.sh` 快速搭建开发�
 
 docker方式脚本初使化：进入docker-compose目录，执行命令 `docker-compose up mysql-init`
 
-注：windows下执行此命令会报错，需要进入容器手动执行sql脚本(需要将auth/db、gateway/gateway-admin/src/main/db/、sysadmin/db都拷贝过去执行)，widnows下命令如下：
-拷贝脚本：docker cp d:\\db.sql sc-mysql:/root/db.sql
-进入docker容器：docker exec -it sc-mysql bash
-进入mysql：mysql -uroot -proot123
-执行sql：source /root/db.sql;
-查看是否创建数据库成功：show databases;
-如果能看到sc_admin、sc_auth、sc_gateway证明脚本执行成功。
+注：windows下执行此命令会报错，需要进入容器手动执行sql脚本(需要将auth/db、gateway/gateway-admin/src/main/db/、sysadmin/db都拷贝过去执行)，widnows下命令如下：  
+拷贝脚本：docker cp d:\\db.sql sc-mysql:/root/db.sql  
+进入docker容器：docker exec -it sc-mysql bash  
+进入mysql：mysql -uroot -proot123  
+执行sql：source /root/db.sql;  
+查看是否创建数据库成功：show databases;  
+如果能看到sc_admin、sc_auth、sc_gateway证明脚本执行成功。  
 
 
 **子项目脚本**
