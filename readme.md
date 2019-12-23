@@ -113,6 +113,14 @@ gateway-admin可动态调整gateway-web的路由策略，测试前请先配置�
 
 [常见问题](https://github.com/zhoutaoo/SpringCloud/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
 
+### 访问  
+linux/mac:  
+访问nacos注册配置中心：http://localhost:8848/nacos;  
+windows:  
+windows下无法直接访问到docker虚拟机，因此需要先看下docker虚拟机的IP地址：  
+1、docker-machine -ls   //查看docker虚拟机的名称  
+2、docker-machine ip default  //查看docker虚拟机的ip地址  
+3、http://192.168.99.100:8848/nacos   //使用第二部列出的docker虚拟机的IP地址访问就可以了  
 
 ### 测试
 
